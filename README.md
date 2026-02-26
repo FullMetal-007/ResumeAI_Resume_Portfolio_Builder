@@ -1,6 +1,6 @@
 # 🚀 ResumeAI & Portfolio Builder
 
-![ResumeAI Hero](./public/images/readme/hero.png)
+![ResumeAI Hero](./public/images/hero.png)
 
 ### **The Intelligent Branding Platform for Modern Professionals**
 
