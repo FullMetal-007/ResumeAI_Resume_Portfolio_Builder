@@ -11,8 +11,29 @@ export async function POST(req: NextRequest) {
             return NextResponse.json({ error: "Missing resume or job description" }, { status: 400 });
         }
 
+        const apiKey = process.env.GEMINI_API_KEY;
+        const isPrototype = !apiKey || apiKey.includes("your_") || apiKey === "placeholder";
+
+        if (isPrototype) {
+            console.warn("[ATS Score API] Using Prototype Mode mock data.");
+            await new Promise(resolve => setTimeout(resolve, 800));
+
+            return NextResponse.json({
+                score: 78,
+                matchedKeywords: ["React", "TypeScript", "Node.js", "Next.js"],
+                missingKeywords: ["GraphQL", "Docker", "AWS"],
+                suggestions: [
+                    "Highlight your experience with cloud infrastructure more prominently.",
+                    "Include specific metrics for your project optimizations.",
+                    "Add AWS certifications if applicable."
+                ],
+                confidence: 0.85
+            });
+        }
+
         const prompt = ATS_SCORE_PROMPT(resumeText, jobDescription);
         const raw = await routeAIRequest("ats_scoring", prompt, true);
+        // ... rest of the logic ...
 
         // Parse JSON response
         let score: ATSScore;
