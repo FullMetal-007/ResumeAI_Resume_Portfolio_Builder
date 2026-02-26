@@ -1,4 +1,4 @@
-import { PortfolioData, PortfolioStyle } from "@/types/portfolio";
+import { PortfolioData } from "@/types/portfolio";
 
 export interface SavedPortfolio {
     id: string;
@@ -26,7 +26,7 @@ export async function listPortfolios(): Promise<SavedPortfolio[]> {
         const res = await fetch("/api/portfolios");
         if (res.ok) {
             const cloudPortfolios = await res.json();
-            return cloudPortfolios.map((p: any) => ({
+            return cloudPortfolios.map((p: { _id: string; name: string; templateId: string; data: PortfolioData; updatedAt: string }) => ({
                 id: p._id,
                 name: p.name,
                 templateId: p.templateId,
