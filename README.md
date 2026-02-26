@@ -6,7 +6,7 @@
 
 **ResumeAI** is a premium SaaS platform designed to bridge the gap between your experience and a professional online presence. In minutes, transform your raw data into **ATS-optimized resumes** and **fully-functional, production-ready portfolios**.
 
-[Live Demo](http://localhost:3000) • [Documentation](#-documentation) • [Templates](#-premium-templates)
+[Live Demo](http://localhost:3000)
 
 ---
 
