@@ -102,7 +102,5 @@ Contributions are what make the open-source community such an amazing place to l
 
 ---
 
-## 📄 License
-Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="center">Built with ❤️ for the Developer Community</p>
