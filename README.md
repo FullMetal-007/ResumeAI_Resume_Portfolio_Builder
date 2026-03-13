@@ -6,7 +6,7 @@
 
 **ResumeAI** is a premium SaaS platform designed to bridge the gap between your experience and a professional online presence. In minutes, transform your raw data into **ATS-optimized resumes** and **fully-functional, production-ready portfolios**.
 
-[Live Demo](http://localhost:3000)
+[Live Demo](https://resume-ai-resume-portfolio-builder.vercel.app/)
 
 ---
 
@@ -76,26 +76,6 @@ NEXTAUTH_URL=http://localhost:3000
 ```bash
 npm run dev
 ```
-
----
-
-## 🚢 Deployment
-
-1. **Push to GitHub**: Initialize a repository and push your project.
-2. **Connect to Vercel**: Import the repository and add your environment variables.
-3. **Go Live**: Your site is now live on your custom `.vercel.app` domain.
-
----
-
-## 💎 Pro Tier Features
-Unlock the full power of professional branding:
-- [x] Unlimited AI Content Generations
-- [x] Full Source Code Downloads (ZIP)
-- [x] Premium "Agency Pro" Template Access
-- [x] Advanced ATS Matching Analysis
-- [x] No Watermarks on Exports
-
----
 
 ## 🤝 Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
